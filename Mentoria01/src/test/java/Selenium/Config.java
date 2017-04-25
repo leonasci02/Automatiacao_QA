@@ -30,7 +30,7 @@ public class Config
 			
 			// Valores Default
 
-			String Nome = "Leonardo",Senha = "123456789";
+			String Nome = "Leonardo",Senha = "123456789",Celular = "11976301416";
 
 				   
 			
@@ -39,8 +39,8 @@ public class Config
 			WebElement CampoNome = driver.findElement(By.id("full-name"));
 			CampoNome.sendKeys(Nome);
 			
-			WebElement CamCelular = driver.findElement(By.className("user[email]"));
-			CamCelular.sendKeys("1176301416");
+			WebElement CamCelular = driver.findElement(By.id("email"));
+			CamCelular.sendKeys(Celular);
 			
 			WebElement CampoSenha = driver.findElement(By.id("password"));
 			CampoSenha.sendKeys(Senha);
