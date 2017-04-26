@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Config 
 {
-	public static void main (String [] args)
+//	public static void main (String [] args)
 	
 	{
 	// Configuração do Google Chrome
@@ -30,10 +30,10 @@ public class Config
 			
 			// Valores Default
 
-			String Nome = "Leonardo",Senha = "123456789",Celular = "11976301416";
+			String Nome = "Leonardo",
+				   Senha = "123456789",
+				   Celular = "11976301416";
 
-				   
-			
 			//Obter Elementos na Tela
 			
 			WebElement CampoNome = driver.findElement(By.id("full-name"));
