@@ -1,0 +1,53 @@
+package Selenium;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Config2 {
+	
+	public static void main (String [] args)
+	{
+		//Configuração do Google Chrome
+		
+		String exePath = "C:\\Users\\jaque\\Downloads\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		WebDriver driver = new ChromeDriver();
+		
+		//Link da URL 
+		
+		String URL = "http://toolsqa.com/automation-practice-form/";
+		driver.get(URL);
+		
+		// Obter Elemento de Campo Texto
+		
+		String FirstName = "Leonardo",
+			   LastName = "Nascimento";
+		
+		WebElement NomeUm = driver.findElement(By.name("firstname"));
+		NomeUm.sendKeys(FirstName);
+		
+		WebElement NomeDois = driver.findElement(By.name("LastName"));
+		NomeDois.sendKeys(LastName);
+		
+		// Obter Elemento de RadioButton - Sexo
+		
+		List<WebElement> Rdb_sex = driver.findElements(By.name("sex"));
+		
+		boolean Rdb_value = false;
+		Rdb_value = Rdb_sex.get(0).isSelected();
+		
+		if (Rdb_value == true)
+		{
+			Rdb_sex.get(1).click();
+		}
+		else
+		{
+			Rdb_sex.get(0).click();
+		}
+		
+		// Obter Elemento de R
+	}
+}

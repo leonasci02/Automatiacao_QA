@@ -1,0 +1,22 @@
+package Selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Config2 {
+	
+	public static void main (String [] args)
+	{
+		//Configuração do Google Chrome
+		
+		String exePath = "C:\\Users\\jaque\\Downloads\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		WebDriver driver = new ChromeDriver();
+		
+		//Link da URL 
+		
+		String URL = "http://toolsqa.com/automation-practice-form/";
+		driver.get(URL);
+		
+	}
+}
