@@ -2,11 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="PageObject.Selenium.Mentoria"/>
 			<item value="Mentoria01.selenium"/>
 		</list>
 		<list key="name">
+			<item value="PageObject"/>
 		</list>
 		<list key="artifactId">
+			<item value="PageObject.Selenium"/>
 			<item value="Mentoria01"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -45,6 +48,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\jaque\Desktop\Selenium\Mentoria01"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

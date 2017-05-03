@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Config2 {
 	
-	public static void main (String [] args) throws Exception
+//	public static void main (String [] args) throws Exception
 	{
 		//Configuração do Google Chrome
 		
@@ -24,7 +24,6 @@ public class Config2 {
 		
 		String URL = "http://toolsqa.com/automation-practice-form/";
 		driver.get(URL);
-		Thread.sleep(100);
 		
 		
 		// Obter Elemento de Campo Texto
