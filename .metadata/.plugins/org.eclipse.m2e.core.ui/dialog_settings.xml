@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="ProjetoNovo.selenium"/>
 			<item value="PageObject.Selenium.Mentoria"/>
 			<item value="Mentoria01.selenium"/>
 		</list>
@@ -9,6 +10,7 @@
 			<item value="PageObject"/>
 		</list>
 		<list key="artifactId">
+			<item value="ProjetoNovo"/>
 			<item value="PageObject.Selenium"/>
 			<item value="Mentoria01"/>
 		</list>

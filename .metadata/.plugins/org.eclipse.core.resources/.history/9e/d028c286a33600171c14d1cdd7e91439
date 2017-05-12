@@ -1,0 +1,37 @@
+package CaseTest;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TesteNovo {
+
+	public static WebDriver driver;
+	public static WebElement element;
+	
+	public static void main (String [] args)
+	{
+		
+		String ExePatch = "C:\\Users\\jaque\\Downloads\\chromedriver.exe",
+			   Url = "https://www.makemytrip.com/",
+			   Idbutton = "js-switch__option";
+		
+		// Configuração e execução do navegador
+		
+		System.setProperty("webdriver.chrome.driver",ExePatch);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(Url);
+		
+		//Obter Elementos na tela
+		
+		List<WebElement> listBtn = driver.findElements(By.id(""));
+		
+		
+		
+	}
+	
+}

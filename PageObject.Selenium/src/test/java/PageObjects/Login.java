@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 
 public class Login {
 	
+	WebDriver driver;
+	
 	public static WebElement element = null;
 
 	public static WebElement UserName(WebDriver driver)
